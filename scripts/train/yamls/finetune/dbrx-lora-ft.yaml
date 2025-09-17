@@ -29,6 +29,15 @@ model:
   use_flash_attention_2: true
   pretrained_model_name_or_path: databricks/dbrx-instruct
 
+train:
+  profiler:
+    schedule:
+      skip_first: 5
+      wait: 5
+      warmup: 3
+      active: 3
+      repeat: 0
+
 # Tokenizer
 tokenizer:
   name: databricks/dbrx-instruct
