@@ -58,10 +58,10 @@ train_loader:
     decoder_only_format: true
     override_eos_token_id_mismatch_error: true
   drop_last: true
-  pin_memory: true
-  num_workers: 8
+  pin_memory: false
+  num_workers: 2
   prefetch_factor: 2
-  persistent_workers: true
+  persistent_workers: false
 
 eval_loader:
   name: finetuning
