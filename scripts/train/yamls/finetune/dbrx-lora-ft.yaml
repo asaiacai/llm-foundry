@@ -44,7 +44,7 @@ train_loader:
     hf_name: mosaicml/dolly_hhrlhf
     shuffle: true
     max_seq_len: ${variables.max_seq_len}
-    eos_token_id: 0
+    # eos_token_id: 0
     packing_ratio: auto
     allow_pad_trimming: false
     decoder_only_format: true
