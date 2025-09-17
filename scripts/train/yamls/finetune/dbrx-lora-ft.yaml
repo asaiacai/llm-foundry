@@ -48,6 +48,7 @@ train_loader:
     packing_ratio: auto
     allow_pad_trimming: false
     decoder_only_format: true
+    override_eos_token_id_mismatch_error: true
   drop_last: true
   pin_memory: true
   num_workers: 8
@@ -64,6 +65,7 @@ eval_loader:
     packing_ratio: null
     allow_pad_trimming: false
     decoder_only_format: true
+    override_eos_token_id_mismatch_error: true
   drop_last: true
   pin_memory: true
   num_workers: 8
